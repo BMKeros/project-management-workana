@@ -1,0 +1,39 @@
+<odoo>
+    <data>
+        <!-- explicit list view definition -->
+        <record model="ir.ui.view" id="pm_workana_project_view_tree">
+            <field name="name">pm.workana.project.tree</field>
+            <field name="model">pm.workana.project</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="amount"/>
+                    <field name="description"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="pm_workana_project_view_form">
+            <field name="name">pm.workana.project.form</field>
+            <field name="model">pm.workana.project</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button name="calculate_profit_distribution" string="Calculate Profit" type="object"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <field name="name" style="width:50% !important;"/>
+                            <field name="amount" style="width:50% !important;"/>
+                            <field name="amount_total" style="width:50% !important;" readonly="1"/>
+                            <field name="date" style="width:50% !important;"/>
+                            <field name="description" style="width:50% !important;"/>
+                            <field name="distribution_line_ids" context="{'amount_total': amount_total}"/>
+                            <field name="deduction_line_ids"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

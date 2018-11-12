@@ -1,0 +1,17 @@
+<odoo>
+    <data>
+        <!-- explicit list view definition -->
+        <record model="ir.ui.view" id="pm_workana_distribution_line_view_tree">
+            <field name="name">pm.workana.distribution.line.tree</field>
+            <field name="model">pm.workana.distribution.line</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="partner_id"/>
+                    <field name="role_id"/>
+                    <field name="percentaje"/>
+                    <field name="profit"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<odoo>
+	<data>
+		<!--Action WINDOWS -->
+		<record model="ir.actions.act_window" id="action_pm_workana">
+			<field name="name">Project Workana</field>
+			<field name="res_model">pm.workana.project</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		<!--Menu item -->
+		<menuitem id="root_pm_workana_menu"
+			name="Project Workana"
+			sequence="20"
+			/>
+
+		<menuitem id="submenu_pm_workana"
+			name="Projects"
+			parent="root_pm_workana_menu"
+			sequence="20"
+			/>
+
+		<menuitem id="menu_pm_workana_project"
+			name="Projects"
+			action="action_pm_workana"
+			parent="submenu_pm_workana"
+			sequence="20"
+			/>
+
+	</data>
+</odoo>

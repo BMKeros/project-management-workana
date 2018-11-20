@@ -22,16 +22,18 @@ class Project(models.Model):
     @api.onchange('deduction_line_ids')
     def _onchange_deduction_line_ids(self):
         self.calculate_profit_distribution()
-
+    
+    @api.multi
     @api.depends('amount', 'deduction_line_ids')
     def _compute_amount_total(self):
-        self.amount_total = self.amount
+        for record in self:
+            record.amount_total = record.amount
 
-        for deduction_line in self.deduction_line_ids:
-            if deduction_line.type.code == DEDUCTION_AMOUNT:
-                self.amount_total =  self.amount_total - deduction_line.amount
-            elif deduction_line.type.code == DEDUCTION_PERCENTAJE:
-                self.amount_total =  self.amount_total - ((self.amount_total * deduction_line.amount)/100)
+            for deduction_line in record.deduction_line_ids:
+                if deduction_line.type.code == DEDUCTION_AMOUNT:
+                    record.amount_total =  record.amount_total - deduction_line.amount
+                elif deduction_line.type.code == DEDUCTION_PERCENTAJE:
+                    record.amount_total =  record.amount_total - ((record.amount_total * deduction_line.amount)/100)
 
     @api.one
     def calculate_profit_distribution(self):

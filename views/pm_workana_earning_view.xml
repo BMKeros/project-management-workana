@@ -1,0 +1,16 @@
+<odoo>
+    <data>
+        <!-- explicit list view definition -->
+        <record model="ir.ui.view" id="pm_workana_earning_view_tree">
+            <field name="name">pm.workana.earning.tree</field>
+            <field name="model">pm.workana.earning</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="partner_id"/>
+                    <field name="project_id"/>
+                    <field name="amount"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>

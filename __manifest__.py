@@ -22,6 +22,7 @@
         'views/pm_workana_project_view.xml',
         'views/pm_workana_distribution_line_view.xml',
         'views/pm_workana_deduction_line_view.xml',
+        'views/pm_workana_earning_view.xml'
     ],
 
     'demo': [

@@ -44,6 +44,20 @@ class Project(models.Model):
             distribution_line.profit = (
                 (self.amount_total * distribution_line.percentaje) / 100)
 
+    @api.one
+    def calculate_earnings(self):
+        for distribution in self.distribution_line_ids:
+            results = self.env['pm.workana.earning'].search([
+                ['partner_id', '=', distribution.partner_id.id],
+                ['project_id', '=', self.id]
+            ])
+
+            if len(results) == 0:
+                self.env['pm.workana.earning'].create({
+                    'partner_id': distribution.partner_id.id,
+                    'project_id': self.id
+                })
+
     name = fields.Char(string="Project Name")
     amount = fields.Float(string="Project Amount")
     amount_total = fields.Float(
@@ -69,7 +83,6 @@ class Project(models.Model):
 
     @api.model
     def create(self, vals):
-        print(vals)
         record = super(Project, self).create(vals)
 
         for distribution in record.distribution_line_ids:

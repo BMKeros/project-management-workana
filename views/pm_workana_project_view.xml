@@ -7,8 +7,8 @@
             <field name="arch" type="xml">
                 <tree>
                     <field name="name"/>
-		    <field name="amount"/>
-		    <field name="amount_total" sum="Profit Total"/>
+                    <field name="amount"/>
+                    <field name="amount_total" sum="Profit Total"/>
                     <field name="description"/>
                 </tree>
             </field>
@@ -21,6 +21,8 @@
                 <form>
                     <header>
                         <button name="calculate_profit_distribution" string="Calculate Profit" type="object"/>
+                        <button name="calculate_earnings" string="Calculate Earnings" type="object"/>
+
                     </header>
                     <sheet>
                         <group>

@@ -25,6 +25,7 @@ class Project(models.Model):
     def _onchange_deduction_line_ids(self):
         self.calculate_profit_distribution()
 
+
     @api.multi
     @api.depends('amount', 'deduction_line_ids')
     def _compute_amount_total(self):
@@ -57,6 +58,22 @@ class Project(models.Model):
                     'partner_id': distribution.partner_id.id,
                     'project_id': self.id
                 })
+
+
+    @api.one
+    @api.constrains('amount', 'amount_total')
+    def check_values(self):
+        if self.amount < 0 or self.amount_total < 0:
+            raise ValidationError(
+                'Los valores no pueder ser negativos'
+            )
+
+    @api.one
+    @api.constrains('name')
+    def field_name_contrains(self):
+        if not self.name:
+            raise ValidationError('El campo nombre no puede estar vacio')
+
 
     name = fields.Char(string="Project Name")
     amount = fields.Float(string="Project Amount")
@@ -149,6 +166,7 @@ class Earning(models.Model):
     project_id = fields.Many2one('pm.workana.project', string="Project")
     partner_id = fields.Many2one('res.partner', string="Colaborator")
     amount = fields.Float('Amount', compute="_compute_amount_total")
+    date_project =  fields.Date(related='project_id.date', string='Date')
 
     @api.multi
     @api.depends('project_id', 'partner_id')

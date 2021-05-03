@@ -1,0 +1,242 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* project-management-workana
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0-20190424\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-12 23:43+0000\n"
+"PO-Revision-Date: 2021-04-12 23:43+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: project-management-workana
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_deduction_line_amount
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_earning_amount
+#: selection:pm.workana.deduction.type,code:0
+msgid "Amount"
+msgstr "Monto"
+
+#. module: project-management-workana
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_project_amount_total
+msgid "Amount Total"
+msgstr "Monto Total"
+
+#. module: project-management-workana
+#: model:ir.ui.view,arch_db:project-management-workana.pm_workana_project_view_form
+msgid "Calculate Earnings"
+msgstr "Calcular Ingresos"
+
+#. module: project-management-workana
+#: model:ir.ui.view,arch_db:project-management-workana.pm_workana_project_view_form
+msgid "Calculate Profit"
+msgstr "Calcular ganancias"
+
+#. module: project-management-workana
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_deduction_type_code
+msgid "Code"
+msgstr "Codigo"
+
+#. module: project-management-workana
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_distribution_line_partner_id
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_earning_partner_id
+msgid "Colaborator"
+msgstr "Colaborador"
+
+#. module: project-management-workana
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_deduction_line_create_uid
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_deduction_type_create_uid
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_distribution_line_create_uid
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_distribution_role_create_uid
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_earning_create_uid
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_project_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: project-management-workana
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_deduction_line_create_date
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_deduction_type_create_date
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_distribution_line_create_date
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_distribution_role_create_date
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_earning_create_date
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_project_create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: project-management-workana
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_project_deduction_line_ids
+msgid "Deductions"
+msgstr "Deducciones"
+
+#. module: project-management-workana
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_deduction_line_description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: project-management-workana
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_deduction_line_display_name
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_deduction_type_display_name
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_distribution_line_display_name
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_distribution_role_display_name
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_earning_display_name
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_project_display_name
+msgid "Display Name"
+msgstr "Mostrar nombre"
+
+#. module: project-management-workana
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_project_distribution_line_ids
+msgid "Distribution"
+msgstr "Distribución"
+
+#. module: project-management-workana
+#: model:ir.actions.act_window,name:project-management-workana.action_pm_workana_earning
+#: model:ir.ui.menu,name:project-management-workana.menu_pm_workana_earnings
+msgid "Earnings"
+msgstr "Ingresos"
+
+#. module: project-management-workana
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_deduction_line_id
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_deduction_type_id
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_distribution_line_id
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_distribution_role_id
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_earning_id
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_project_id
+msgid "ID"
+msgstr "ID"
+
+#. module: project-management-workana
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_deduction_line___last_update
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_deduction_type___last_update
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_distribution_line___last_update
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_distribution_role___last_update
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_earning___last_update
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_project___last_update
+msgid "Last Modified on"
+msgstr "Modificada por última vez"
+
+#. module: project-management-workana
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_deduction_line_write_uid
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_deduction_type_write_uid
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_distribution_line_write_uid
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_distribution_role_write_uid
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_earning_write_uid
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_project_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización realizada por"
+
+#. module: project-management-workana
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_deduction_line_write_date
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_deduction_type_write_date
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_distribution_line_write_date
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_distribution_role_write_date
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_earning_write_date
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_project_write_date
+msgid "Last Updated on"
+msgstr "Ultima actualizacion en"
+
+#. module: project-management-workana
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_distribution_line_percentaje
+#: selection:pm.workana.deduction.type,code:0
+msgid "Percentaje"
+msgstr "Porcentaje"
+
+#. module: project-management-workana
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_distribution_line_profit
+msgid "Profit"
+msgstr "Ganancia"
+
+#. module: project-management-workana
+#: model:ir.ui.view,arch_db:project-management-workana.pm_workana_project_view_tree
+msgid "Profit Total"
+msgstr "Ganancia Total"
+
+#. module: project-management-workana
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_earning_project_id
+msgid "Project"
+msgstr "Proyecto"
+
+#. module: project-management-workana
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_project_amount
+msgid "Project Amount"
+msgstr "Monto del proyecto"
+
+#. module: project-management-workana
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_project_date
+msgid "Project Date"
+msgstr "Fecha del proyecto"
+
+#. module: project-management-workana
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_project_description
+msgid "Project Description"
+msgstr "Descripción del proyecto"
+
+#. module: project-management-workana
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_project_name
+msgid "Project Name"
+msgstr "Nombre del proyecto"
+
+#. module: project-management-workana
+#: model:ir.actions.act_window,name:project-management-workana.action_pm_workana
+#: model:ir.ui.menu,name:project-management-workana.root_pm_workana_menu
+msgid "Project Workana"
+msgstr "Proyectos Workana"
+
+#. module: project-management-workana
+#: model:ir.ui.menu,name:project-management-workana.menu_pm_workana_project
+#: model:ir.ui.menu,name:project-management-workana.submenu_pm_workana
+msgid "Projects"
+msgstr "Proyectos"
+
+#. module: project-management-workana
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_distribution_line_role_id
+msgid "Role"
+msgstr "Rol"
+
+#. module: project-management-workana
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_deduction_type_title
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_distribution_role_title
+msgid "Title"
+msgstr "Título"
+
+#. module: project-management-workana
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_deduction_line_type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: project-management-workana
+#: model:ir.model,name:project-management-workana.model_pm_workana_deduction_line
+msgid "pm.workana.deduction.line"
+msgstr "pm.workana.deduction.line"
+
+#. module: project-management-workana
+#: model:ir.model,name:project-management-workana.model_pm_workana_deduction_type
+msgid "pm.workana.deduction.type"
+msgstr "pm.workana.deduction.type"
+
+#. module: project-management-workana
+#: model:ir.model,name:project-management-workana.model_pm_workana_distribution_line
+msgid "pm.workana.distribution.line"
+msgstr "pm.workana.distribution.line"
+
+#. module: project-management-workana
+#: model:ir.model,name:project-management-workana.model_pm_workana_distribution_role
+msgid "pm.workana.distribution.role"
+msgstr "pm.workana.distribution.role"
+
+#. module: project-management-workana
+#: model:ir.model,name:project-management-workana.model_pm_workana_earning
+msgid "pm.workana.earning"
+msgstr "pm.workana.earning"
+
+#. module: project-management-workana
+#: model:ir.model,name:project-management-workana.model_pm_workana_project
+msgid "pm.workana.project"
+msgstr "pm.workana.project"
+
+msgid "Date"
+msgstr "Fecha"

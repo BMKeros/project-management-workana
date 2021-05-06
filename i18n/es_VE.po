@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 11.0-20190424\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 23:43+0000\n"
-"PO-Revision-Date: 2021-04-12 23:43+0000\n"
+"POT-Creation-Date: 2021-05-06 15:27+0000\n"
+"PO-Revision-Date: 2021-05-06 15:27+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -69,6 +69,11 @@ msgid "Created on"
 msgstr "Creado en"
 
 #. module: project-management-workana
+#: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_earning_date_project
+msgid "Date"
+msgstr "Fecha"
+
+#. module: project-management-workana
 #: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_project_deduction_line_ids
 msgid "Deductions"
 msgstr "Deducciones"
@@ -107,7 +112,7 @@ msgstr "Ingresos"
 #: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_earning_id
 #: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_project_id
 msgid "ID"
-msgstr "ID"
+msgstr ""
 
 #. module: project-management-workana
 #: model:ir.model.fields,field_description:project-management-workana.field_pm_workana_deduction_line___last_update
@@ -182,12 +187,8 @@ msgstr "Nombre del proyecto"
 
 #. module: project-management-workana
 #: model:ir.actions.act_window,name:project-management-workana.action_pm_workana
-#: model:ir.ui.menu,name:project-management-workana.root_pm_workana_menu
-msgid "Project Workana"
-msgstr "Proyectos Workana"
-
-#. module: project-management-workana
 #: model:ir.ui.menu,name:project-management-workana.menu_pm_workana_project
+#: model:ir.ui.menu,name:project-management-workana.root_pm_workana_menu
 #: model:ir.ui.menu,name:project-management-workana.submenu_pm_workana
 msgid "Projects"
 msgstr "Proyectos"
@@ -211,32 +212,30 @@ msgstr "Tipo"
 #. module: project-management-workana
 #: model:ir.model,name:project-management-workana.model_pm_workana_deduction_line
 msgid "pm.workana.deduction.line"
-msgstr "pm.workana.deduction.line"
+msgstr ""
 
 #. module: project-management-workana
 #: model:ir.model,name:project-management-workana.model_pm_workana_deduction_type
 msgid "pm.workana.deduction.type"
-msgstr "pm.workana.deduction.type"
+msgstr ""
 
 #. module: project-management-workana
 #: model:ir.model,name:project-management-workana.model_pm_workana_distribution_line
 msgid "pm.workana.distribution.line"
-msgstr "pm.workana.distribution.line"
+msgstr ""
 
 #. module: project-management-workana
 #: model:ir.model,name:project-management-workana.model_pm_workana_distribution_role
 msgid "pm.workana.distribution.role"
-msgstr "pm.workana.distribution.role"
+msgstr ""
 
 #. module: project-management-workana
 #: model:ir.model,name:project-management-workana.model_pm_workana_earning
 msgid "pm.workana.earning"
-msgstr "pm.workana.earning"
+msgstr ""
 
 #. module: project-management-workana
 #: model:ir.model,name:project-management-workana.model_pm_workana_project
 msgid "pm.workana.project"
-msgstr "pm.workana.project"
+msgstr ""
 
-msgid "Date"
-msgstr "Fecha"

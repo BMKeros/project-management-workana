@@ -3,7 +3,7 @@
 	<data>
 		<!--Action WINDOWS -->
 		<record model="ir.actions.act_window" id="action_pm_workana">
-			<field name="name">Project Workana</field>
+			<field name="name">Projects</field>
 			<field name="res_model">pm.workana.project</field>
 			<field name="view_mode">tree,form</field>
 		</record>
@@ -15,7 +15,7 @@
 		</record>
 
 		<!--Menu item -->
-		<menuitem id="root_pm_workana_menu" name="Project Workana" sequence="20" />
+		<menuitem id="root_pm_workana_menu" name="Projects" sequence="20" />
 
 		<menuitem id="submenu_pm_workana" name="Projects" parent="root_pm_workana_menu" sequence="20" />
 
